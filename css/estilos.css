@@ -1,0 +1,112 @@
+html{
+    width: 100%;
+    background-color: rgb(86, 115, 192);
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    color: rgb(191, 245, 245);
+}
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    z-index: 100;
+    float: left;
+    background-color: rgb(4, 4, 58);
+    margin: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    opacity: 90%;
+    border: 2px solid rgb(73, 0, 0);
+}
+nav:hover{
+    opacity: 100%;
+}
+nav ul li{
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+html::-webkit-scrollbar {
+    width: 15px;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: rgba(68, 68, 84, 0.7);
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar {
+    width: 10px;
+}
+.container::-webkit-scrollbar-thumb {
+    background-color: hsla(240, 93%, 6%, 0.158);
+    border-radius: 10px;
+}
+
+nav::-webkit-scrollbar {
+    width: 8px;
+}
+nav::-webkit-scrollbar-thumb {
+    background-color: rgba(68, 68, 84, 0.7);
+    border-radius: 10px;
+}
+.container{
+    background-color: rgba(6, 39, 82, 0.856);
+    margin: 1%;
+    border-radius: 5px;
+    margin-left: 220px;
+    overflow-y: scroll;
+    padding: 1%;
+}
+h2{
+    width: 80%;
+    margin-left: 2%;
+}
+h2::selection{
+    color: rgb(19, 4, 73);
+}
+label{
+    text-align: left;
+}
+label::selection{
+    color: rgb(19, 4, 73);
+}
+a{
+    text-decoration: none;
+    color: rgb(58, 189, 189);
+}
+a:hover{
+    color: rgb(191, 245, 245);
+}
+
+@media screen and (max-width: 480px) {
+    html{
+        background-image: url("../img/fondo.jpg");
+        background-repeat: repeat-y;
+        background-size: auto;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 1280px) {
+    html{
+        background-image: url("../img/fondo.jpg");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+    }
+}
